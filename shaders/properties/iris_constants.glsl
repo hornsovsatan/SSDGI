@@ -1,0 +1,1 @@
+const float sunPathRotation = -40.0;
