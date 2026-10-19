@@ -1,0 +1,68 @@
+screen.postProcessing = Post-Processing
+
+
+option.BLOOM_INTENSITY = Bloom intensity
+value.BLOOM_INTENSITY.0= Off
+
+option.AA = Anti-aliasing
+value.AA.0= Off
+value.AA.1= qGBAA
+value.AA.2= tGBAA
+option.AA.comment = qGBAA only removes aliasing on edges of geometry. tGBAA also removes aliasing between texture pixels. 
+
+option.LM_INTENSITY = Lightmap intensity
+option.LM_INTENSITY.comment = Vanilla lighting intensity scale
+
+
+option.EXPOSURE = Exposure
+
+option.HIZ_PIXEL_SIZE = Ray tracing precision
+option.HIZ_PIXEL_SIZE.comment = This option controls the step size the ray tracer uses to march across the screen. Adjusting it is a tradeoff between maximum ray length and precision. Currently, the maximum ray length is 1536 pixels in high precision mode and 2560 pixels in low precision mode. It’s recommended to use low precision on higher-resolution displays.
+
+value.HIZ_PIXEL_SIZE.3 = High
+value.HIZ_PIXEL_SIZE.5 = Low
+
+option.SHADOW_DISTANCE = Sun shadow distance
+option.SHADOW_DISTANCE.comment = Render distance of sun & moon shadows
+
+value.SHADOW_DISTANCE.0.375 = 3 Chunks
+value.SHADOW_DISTANCE.0.500 = 4 Chunks
+value.SHADOW_DISTANCE.0.750 = 6 Chunks
+value.SHADOW_DISTANCE.1.000 = 8 Chunks
+value.SHADOW_DISTANCE.1.250 = 10 Chunks
+value.SHADOW_DISTANCE.1.500 = 12 Chunks
+value.SHADOW_DISTANCE.2.000 = 16 Chunks
+value.SHADOW_DISTANCE.2.500 = 20 Chunks
+value.SHADOW_DISTANCE.3.000 = 24 Chunks
+
+option.SHADOW_QUALITY = Sun shadow quality
+option.SHADOW_QUALITY.comment = Controls quality of sun & moon shadows. This settings changes shadowmap resolution, number of samples and variable penumbra range
+value.SHADOW_QUALITY.0 = Low
+value.SHADOW_QUALITY.1 = Default
+value.SHADOW_QUALITY.2 = High
+
+option.RAY_PENETRATION = Ray penetration
+option.RAY_PENETRATION.comment = Allows rays to go behind objects. Can cause light leaking
+value.RAY_PENETRATION.0 = Off
+value.RAY_PENETRATION.1 = On
+
+option.DENOISER = Denoiser
+value.DENOISER.0 = Off
+value.DENOISER.1 = Low
+value.DENOISER.2 = On
+
+option.REMOVE_FOG = Disable volumetric effects
+option.REMOVE_FOG.comment = Disables fog and godrays
+
+option.VANILLA_CLOUDS = Vanilla clouds
+option.CLOUD_SHADOWS = Cloud shadows
+
+
+option.EMISSION_MULTIPLIER = Surface emission strength
+option.EMISSION_MULTIPLIER.comment = Adjust brightness of emissive materials
+
+option.TONEMAP_OPERATOR = Tonemap operator
+value.TONEMAP_OPERATOR.tonemapVTXS = VTXS
+value.TONEMAP_OPERATOR.tonemapACESFitted = ACES
+value.TONEMAP_OPERATOR.tonemapLottes = Lottes
+value.TONEMAP_OPERATOR.tonemapReinhard = Reinhard
